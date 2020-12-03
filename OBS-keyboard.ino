@@ -11,11 +11,14 @@ int numeri[18] = {63, 6, 91, 79, 102, 109, 125, 7, 127, 111, 119, 124, 57, 94, 1
 long unsigned int pros_pres_x = 0;
 long unsigned int pros_pres_y = 0;
 long unsigned int pros_pres_t = 0;
-#define t_min_nuncy 130
+long unsigned int pros_pres_cc = 0;
+#define t_min_nuncy 180
 #define t_zoom 2
+#define t_cc 100 //tempo doppio click
+bool statoZ =0;
 ArduinoNunchuk nuncy = ArduinoNunchuk();
 
-char lettere[19] = {'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 223, 'D', 'F', 'G', 'H', 'J','K','L'};
+char lettere[] = {'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 223, 'D', 'F', 'G', 'H', 'J','K','L','Z'};
 enum pulsanti {
   p1 = 13,
   p2 = 8,
